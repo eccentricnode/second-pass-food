@@ -1,0 +1,25 @@
+mat-toolbar {
+    display: flex;
+    justify-content: space-between
+}
+
+mat-sidenav {
+    width: 200px;
+}
+
+.mat-sidenav-container {
+    background: #fff;
+    flex: 1;
+}
+
+mat-icons {
+    color: #ffffff;
+}
+
+.nav-link {
+    color: #000;
+    display: flex;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}

@@ -1,0 +1,18 @@
+<h1 mat-dialog-title>Choose a food type you'd like to view!</h1>
+
+<div mat-dialog-content>
+    <mat-select [(ngModel)]="chosenRoute">
+        <mat-option *ngFor="let route of routes" [value]="route">
+            {{route.title}} {{route.emoji}}
+        </mat-option>
+    </mat-select>
+</div>
+
+<div mat-dialog-actions>
+    <button mat-raised-button (click)="confirmSelection()" color="primary">
+        Let's Go!
+    </button>
+    <button mat-raised-button (click)="dialogRef.close()">
+        Cancel
+    </button>
+</div>

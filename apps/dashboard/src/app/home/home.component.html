@@ -1,0 +1,11 @@
+<div class="wrapper">
+    <div class="home-grid">
+        <mat-card>
+            <h1>Your Emoji</h1>
+            <div *ngIf="selectedRoute">{{ selectedRoute.title }}</div>
+            <button mat-raised-button color="accent" (click)="openEmojiDialog()">
+                Make a selection
+            </button>
+        </mat-card>
+    </div>
+</div>
