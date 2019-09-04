@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 })
 export class HomeComponent {
 
-  selectedRoute: Object;
+  selectedRoute;
 
   constructor(
     public dialog: MatDialog,
