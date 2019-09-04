@@ -1,0 +1,27 @@
+<mat-card>
+  <mat-card-content>
+    <h3 mat-subheader>Pizza's</h3>
+    <mat-list>
+      <mat-list-item
+        *ngFor="let pizza of pizzas"
+        class="mat-list-option"
+        (click)="select(pizza)"
+      >
+        <h4 mat-line>Name: {{ pizza.name }}</h4>
+        <span mat-line>Main Topping: {{ pizza.mainTopping }}</span>
+        <button
+          mat-mini-fab
+          *ngIf="!readonly"
+          (click)="remove(pizza); $event.stopImmediatePropagation()"
+        >
+          <mat-icon>clear</mat-icon>
+        </button>
+      </mat-list-item>
+    </mat-list>
+    <ng-template #elseBlock>
+      <div class="spinner">
+        <mat-spinner mode="indeterminate"></mat-spinner>
+      </div>
+    </ng-template>
+  </mat-card-content>
+</mat-card>

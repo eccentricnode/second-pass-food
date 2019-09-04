@@ -15,9 +15,13 @@ import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { TacosComponent } from './tacos/tacos.component';
 import { PizzasComponent } from './pizzas/pizzas.component';
+import { PizzasListComponent } from './pizzas/pizzas-list/pizzas-list.component';
+import { PizzaDetailsComponent } from './pizzas/pizza-details/pizza-details.component';
+import { TacosListComponent } from './tacos/tacos-list/tacos-list.component';
+import { TacoDetailsComponent } from './tacos/taco-details/taco-details.component';
 
 @NgModule({
-  declarations: [AppComponent, LoginComponent, HomeComponent, TacosComponent, PizzasComponent],
+  declarations: [AppComponent, LoginComponent, HomeComponent, TacosComponent, PizzasComponent, PizzasListComponent, PizzaDetailsComponent, TacosListComponent, TacoDetailsComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
